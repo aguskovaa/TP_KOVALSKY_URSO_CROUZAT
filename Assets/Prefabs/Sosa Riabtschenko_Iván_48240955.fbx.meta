@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: ec1af46a364e04c4abdb12f311317f9f
+guid: e27728a10ead1c74587eb3ced84ac964
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Paleta
+    2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cylinder
+    4300000: Cube
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
