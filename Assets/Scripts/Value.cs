@@ -6,6 +6,15 @@ public class Value : MonoBehaviour
 {
     public int valor;
     public Text suma;
+
+
+
+    public Text btn1;
+    public Text btn2;
+    public Text btn3;
+
+    public Text PrecioProd;
+
     void Start()
     {
         GameObject instancias = GameObject.FindGameObjectWithTag("Producto");
@@ -24,6 +33,16 @@ public class Value : MonoBehaviour
         int suma2 = valores[Random.Range(0, valores.Length)] + valorObjeto;
         string sumastring = suma2.ToString();
         suma.text = "               +               ?               =              " + sumastring;
-        }
 
+
+        btn1.text = "Precio: " + valorObjeto2;
+        btn2.text = "Precio: " + valorObjeto3;
+        btn3.text = "Precio: " + valorObjeto4;
+
+        PrecioProd.text = "Precio: " + valorObjeto;
+
+
+        
     }
+   
+}

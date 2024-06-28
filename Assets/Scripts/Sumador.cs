@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Sumador : MonoBehaviour
 {
+
+    public GameObject BTN1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,4 +17,10 @@ public class Sumador : MonoBehaviour
     void Update()
     {
     }
+
+    private void OnMouseDown()
+    {
+        BTN1 < Color > = Color(808080);
+    }
+
 }
