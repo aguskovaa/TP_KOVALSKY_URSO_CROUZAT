@@ -40,6 +40,9 @@ public class Value : MonoBehaviour
         btn3.text = "Precio: " + valorObjeto4;
 
         PrecioProd.text = "Precio: " + valorObjeto;
-    }
 
+
+        
     }
+   
+}
