@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Sumador : MonoBehaviour
 {
 
-    public GameObject BTN1;
+    public Button btn;
+    public Button btn1;
+    public Button btn2;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +21,11 @@ public class Sumador : MonoBehaviour
     {
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
-        BTN1 < Color > = Color(808080);
+        btn.image.color = Color.gray;
+        btn1.image.color = Color.white;
+        btn2.image.color = Color.white;
     }
 
 }
