@@ -16,17 +16,21 @@ public class SpawnerScripts : MonoBehaviour
         prefab.SetActive(true);
         Instantiate(prefab, position).tag = "Producto";
 
-        GameObject prefab2 = productos[Random.Range(0, productos.Length)];
-        prefab2.SetActive(true);
-        Instantiate(prefab2, position2).tag = "Producto";
+        int prueba = Random.Range(1, productos.Length-1);
 
-        GameObject prefab3 = productos[Random.Range(0, productos.Length)];
+        GameObject prefab2 = productos[prueba];
+        prefab2.SetActive(true);
+        Instantiate(prefab2, position2).tag = "Producto2";
+
+        int prueba3 = prueba - 1;
+        GameObject prefab3 = productos[prueba3];
         prefab3.SetActive(true);
-        Instantiate(prefab3, position3).tag = "Producto";
-           
-        GameObject prefab4 = productos[Random.Range(0, productos.Length)];
+        Instantiate(prefab3, position3).tag = "Producto3";
+
+        int prueba4 = prueba + 1;
+        GameObject prefab4 = productos[prueba4];
         prefab4.SetActive(true);
-        Instantiate(prefab4, position4).tag = "Producto";
+        Instantiate(prefab4, position4).tag = "Producto4";
                 
             
         }

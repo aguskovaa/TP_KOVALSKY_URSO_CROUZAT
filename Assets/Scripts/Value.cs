@@ -8,14 +8,16 @@ public class Value : MonoBehaviour
     public Text suma;
     void Start()
     {
-        // Aquí obtendremos los GameObjects instanciados por SpawnerScripts
-        GameObject[] instancias = GameObject.FindGameObjectsWithTag("Producto");
+        GameObject instancias = GameObject.FindGameObjectWithTag("Producto");
+        GameObject instancias2 = GameObject.FindGameObjectWithTag("Producto2");
+        GameObject instancias3 = GameObject.FindGameObjectWithTag("Producto3");
+        GameObject instancias4 = GameObject.FindGameObjectWithTag("Producto4");
 
-        
-        int valorObjeto = instancias[1].GetComponent<Value>().valor;
-        int valorObjeto2 = instancias[3].GetComponent<Value>().valor;
-        int valorObjeto3 = instancias[5].GetComponent<Value>().valor;
-        int valorObjeto4 = instancias[7].GetComponent<Value>().valor;
+
+        int valorObjeto = instancias.GetComponent<Value>().valor;
+        int valorObjeto2 = instancias2.GetComponent<Value>().valor;
+        int valorObjeto3 = instancias3.GetComponent<Value>().valor;
+        int valorObjeto4 = instancias4.GetComponent<Value>().valor;
 
 
         int[] valores = { valorObjeto2, valorObjeto3, valorObjeto4 };
@@ -25,4 +27,3 @@ public class Value : MonoBehaviour
         }
 
     }
-
