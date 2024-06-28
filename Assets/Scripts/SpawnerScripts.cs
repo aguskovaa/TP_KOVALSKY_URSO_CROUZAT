@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnerScripts : MonoBehaviour
 {
-
     public GameObject[] productos;
     public Transform position;
     public Transform position2;
@@ -24,11 +23,13 @@ public class SpawnerScripts : MonoBehaviour
         GameObject prefab3 = productos[Random.Range(0, productos.Length)];
         prefab3.SetActive(true);
         Instantiate(prefab3, position3).tag = "Producto";
-
+           
         GameObject prefab4 = productos[Random.Range(0, productos.Length)];
         prefab4.SetActive(true);
         Instantiate(prefab4, position4).tag = "Producto";
-    }
+                
+            
+        }
 
     // Update is called once per frame
     void Update()
